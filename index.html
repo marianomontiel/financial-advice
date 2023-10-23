@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <div>
+        <h1>Es hora de cumplir tus metas financieras</h1>
+        <p>Descubrir tus metas es el primer paso para alcanzarlas. Puedo ayudarte a empezar muy facilmente. Brindo
+            opciones basadas en tus necesidades.</p>
+        <div>
+            <p>Necesito que me guíen</p>
+            <button>Empezá aquí</button>
+        </div>
+        <img src="https://www.fidelity.com/bin-public/060_www_fidelity_com/images/newphp/hero-banner-float-mobile-s.svg"
+            alt="">
+    </div>
+    <div>
+        <h2>Vos tenés metas. Yo tengo soluciones.</h2>
+        <div>
+            <img src="" alt="">
+            <section>
+                <div>
+                    <h3>Gastos & ahorros</h3>
+                    <p>Hacé más con tu dinero</p>
+                </div>
+                <div>
+                    <p>Puedo ayudarte a administrar tus gastos y ahorrar de forma inteligente para que puedas alcanzar
+                        tus metas.</p>
+                    <div>
+                        <a href="">Empezá tus ahorros inteligentes</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <img src="" alt="">
+            <section>
+                <div>
+                    <h3>Inversiones</h3>
+                    <p>Invertí de la forma que quieras</p>
+                </div>
+                <div>
+                    <p>No importa si sos un trader o estás invirtiendo para el futuro, puedo ayudarte a alcanzar tus
+                        metas.</p>
+                    <div>
+                        <a href="">Aprende sobre inversiones</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <img src="" alt="">
+            <section>
+                <div>
+                    <h3>Jubilación</h3>
+                    <p>Tu futuro empieza ahora</p>
+                </div>
+                <div>
+                    <p>Ya sea que quieras gestionar tu plan de retiro por tu cuenta o que te guíe, estoy aquí para
+                        acompañarte en el camino.</p>
+                    <div>
+                        <a href="">Comenzá a planificar tu jubilación</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div>
+        <h2>Las pequeñas inversiones pueden hacer crecer tu dinero</h2>
+        <div id="chartDiv">
+            <div>Cartera de inversiones</div>
+            <div class="h3" id="future_balance">?</div>
+            <canvas id="myChart" style="display: block;box-sizing: border-box;height: 300px;"></canvas>
+            <div class="range-slider">
+                <div id="tooltip"></div>
+                <input id="range" type="range" step="10" value="500" min="10" max="1000">
+                <div style="display: flex; justify-content: space-between;">
+                    <span id="rangeLabelMin">$1</span>
+                    <span id="rangeLabelMax">$1,000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <p class="footnotes">
+            <strong>El grafico es una comparasión hipotetica. Las inversiones acarrean riesgos de perdida y los rendimientos no pueden ser garantizados.</strong>
+        </p>
+    </section>
+
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js" integrity="sha512-6HrPqAvK+lZElIZ4mZ64fyxIBTsaX5zAFZg2V/2WT+iKPrFzTzvx6QAsLW2OaLwobhMYBog/+bvmIEEGXi0p1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>
