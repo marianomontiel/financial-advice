@@ -22,7 +22,8 @@
         investment_timespan = document.querySelector('#investment_timespan'),
         investment_timespan_text = document.querySelector('#investment_timespan_text'),
         estimated_return = document.querySelector('#estimated_return'),
-        future_balance = document.querySelector('#future_balance');
+        future_balance = document.querySelector('#future_balance'),
+        future_savings = document.querySelector('#future_savings');
 
     function updateValue(element, action) {
         var min = parseFloat(element.getAttribute('min')),
@@ -149,7 +150,8 @@
                 balance = (compound_interest + contribution_interest).toFixed(0);
             }
 
-            future_balance.innerHTML = '$' + balance;
+            future_balance.innerHTML = '$' + parseFloat(balance).toLocaleString("en-US");
+            future_savings.innerHTML = '$' + principal.toLocaleString("en-US");
             principal_dataset.data.push(principal);
             interest_dataset.data.push(interest);
         }
