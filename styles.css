@@ -3,6 +3,7 @@
 :root {
     --bullish-green: rgb(54, 135, 39);
     --bullish-green-gradient: rgba(54, 135, 39, 0.5);
+    --light-background-green: rgb(243, 248, 242);
     --bearish-gray: rgb(102, 102, 102);
     --bearish-gray-gradient: rgba(102, 102, 102, 0.5);
 
@@ -118,7 +119,7 @@ h1 {
 
 .hero-banner {
     width: 100%;
-    background-color: #F3F8F2;
+    background-color: var(--light-background-green);
     display: flex;
     justify-content: center;
     height: 523.25px;
@@ -267,4 +268,24 @@ h2 {
     width: 900px;
     color: var(--bearish-gray);
     text-align: left;
+}
+
+.why-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    padding: 40px 0px 40px 0px;
+    background-color: var(--light-background-green);
+    margin-top: 20px;
+}
+
+.why-section > h2 {
+    text-align: center;
+}
+
+.why-section > div:nth-child(1n) {
+    display: flex;
+    justify-content: center;
 }
