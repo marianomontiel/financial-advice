@@ -110,49 +110,60 @@
 /* Chart drop down text */
 
 .textDropdown {
-    width: auto;
+    width: 900px;
 }
 
 .dropdownSection {
     width: inherit;
 }
 
-.dropdownSection h2 {
-    padding-left: 15px;
-    height: 50px;
-    line-height: 50px;
+.dropdownSection > p {
+    color: var(--bullish-green);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    height: 15px;
+    margin: 0;
 }
 
 .dropdownSection .textSection {
-    display: none;
-    background-color: white;
-    padding: 20px;
+    display: block;
+    padding: 0px 20px 0px 20px;
     margin-bottom: 10px;
+    height: 0px;
+    transition: all .3s ease-out;
+    overflow: hidden;
 }
 
 .dropdownSection .textSection.expand {
     display: block;
-    background-color: white;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     margin-bottom: 10px;
-    transition: display 1s ease-out;
+    height: 350px;
+    transition: all .3s ease-out;
+    overflow: hidden;
+
 }
 
 .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
+    border: solid var(--bullish-green);
+    border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 5px;
+    margin-right: 10px;
 }
 
 .right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    transition: all .3s ease-out;
 }
 
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+    transition: all .3s ease-out;
+
 }
 
 /* End of Chart drop down text */
