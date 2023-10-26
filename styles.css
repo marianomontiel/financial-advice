@@ -160,6 +160,8 @@
 }
 
 .down {
+    position: relative;
+    top: -3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transition: all .3s ease-out;
