@@ -105,6 +105,58 @@
     border-top-color: #6BA132;
 }
 
+/* End of Chart slider Styles */
+
+/* Chart drop down text */
+
+.textDropdown {
+    width: auto;
+}
+
+.dropdownSection {
+    width: inherit;
+}
+
+.dropdownSection h2 {
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.dropdownSection .textSection {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.dropdownSection .textSection.expand {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: display 1s ease-out;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* End of Chart drop down text */
+
 /* Chart styling */
 .layout-region-content {
     display: flex;
@@ -188,7 +240,7 @@ h2 {
     color: var(--bullish-green);
     background-color: white;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     border: 1px solid var(--bullish-green);
     border-radius: 10px;
@@ -218,12 +270,16 @@ h2 {
 }
 
 .reviews {
-    width: 250px;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
+}
+
+.reviews>p:nth-child(n) {
+    font-size: 14px;
 }
 
 .reviews>p:nth-last-child(-n + 1) {
@@ -281,11 +337,44 @@ h2 {
     margin-top: 20px;
 }
 
-.why-section > h2 {
+.why-section>h2 {
+    font-size: 32px;
     text-align: center;
 }
 
-.why-section > div:nth-child(1n) {
+.why-section>div:nth-child(n +2) {
     display: flex;
     justify-content: center;
+}
+
+.why-section>div:nth-child(n +2)>div {
+    width: 340px;
+    margin: 0px 20px;
+}
+
+.why-section .reviews>strong>h3 {
+    margin: 5px 0px;
+}
+
+.why-section .reviews>p {
+    margin: 0;
+    height: 52px;
+}
+
+.why-section .reviews>a {
+    margin: 0;
+}
+
+.why-anchors {
+    display: inline-block;
+    color: var(--bullish-green);
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.why-anchors:hover {
+    text-decoration: underline;
 }

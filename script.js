@@ -15,6 +15,23 @@
     range.addEventListener('input', setValue);
 })();
 
+//Drop down text
+function changeStuff(event) {
+    textSection = document.querySelector(".textSection");
+    arrow = document.querySelector(".arrow")
+	if(textSection.classList.contains("expand")) {
+		textSection.classList.remove("expand");
+        arrow.classList.remove("down");
+        arrow.classList.add("right")
+	} else {
+        textSection.classList.add("expand");
+        arrow.classList.remove("right");
+        arrow.classList.add("down")
+	}
+
+}
+
+//Compount interest Chart 
 (function () {
     //chart
     let initial_deposit = document.querySelector('#range'),
