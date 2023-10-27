@@ -10,7 +10,27 @@
 
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <div>
+                <ul>
+                    <li class="nav-links">
+                        <a href="">
+                            Planificación & Asesoría
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="">
+                            Noticias & Investigaciones
+                        </a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="">
+                            Por Que Budho
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="layout-region-content">
         <div class="hero-banner">
@@ -21,7 +41,7 @@
                     opciones basadas en tus necesidades.</p>
                 <div>
                     <p class="banner-description-text">Necesito que me guíen</p>
-                    <button>Empezá aquí</button>
+                    <button class="anchor-button-dark">Empezá aquí</button>
                 </div>
             </div>
             <img class="hero-banner-image" src="./src/img/hero-banner-float-mobile-s.svg" alt="">
@@ -123,23 +143,32 @@
             </p>
         </section>
         <div class="textDropdown">
-            <div class="dropdownSection" >
+            <div class="dropdownSection">
                 <p onclick="changeStuff();"><i class="arrow right"></i>Como funciona este grafico</p>
                 <div class="textSection">
-                    <p>The hypothetical chart above illustrates the potential growth of an investment account assuming a 7%
-                        annual nominal investment growth rate vs a .46% National savings account deposit rate as of October
-                        16, 2023*. This chart assumes estimated/average return rates stay constant over the course of the
-                        time horizon and that no withdrawals were taken. Taxes, fees, and inflation are not included. Unlike
-                        traditional FDIC savings accounts, investments accounts are subject to market risk and do not carry
+                    <p>The hypothetical chart above illustrates the potential growth of an investment account assuming a
+                        7%
+                        annual nominal investment growth rate vs a .46% National savings account deposit rate as of
+                        October
+                        16, 2023*. This chart assumes estimated/average return rates stay constant over the course of
+                        the
+                        time horizon and that no withdrawals were taken. Taxes, fees, and inflation are not included.
+                        Unlike
+                        traditional FDIC savings accounts, investments accounts are subject to market risk and do not
+                        carry
                         FDIC insurance to protect from loss. Each type of account has its own unique set of potential
                         benefits and limitations that you should consider before deciding what type is right for you.
                     </p>
                     <p>
-                        Interact with the slider to increase or decrease the monthly contribution to discover how the money
-                        could grow in an investment account vs an FDIC savings account. The monthly contribution is how much
-                        you want to invest every month. In this chart it is set at $250, but you can move the slider from $1
+                        Interact with the slider to increase or decrease the monthly contribution to discover how the
+                        money
+                        could grow in an investment account vs an FDIC savings account. The monthly contribution is how
+                        much
+                        you want to invest every month. In this chart it is set at $250, but you can move the slider
+                        from $1
                         to $1,000 to see how your contributions could grow over time. For example, a $250 monthly
-                        contribution in an investment account could grow to $304,993 in 30 years compared to $96,486 in a
+                        contribution in an investment account could grow to $304,993 in 30 years compared to $96,486 in
+                        a
                         traditional savings account, using end of month compounding.
                     </p>
                     <p>
@@ -149,12 +178,13 @@
                     </p>
                     <p>
                         * FDIC: National Rates and Rate Caps
-                    </p>        
+                    </p>
                 </div>
             </div>
         </div>
         <div class="why-section">
-            <div></div>
+            <div style="display: flex; justify-content: center;"><img style="height: 70px; margin-bottom: -20px;"
+                    src="./src/img/Budho.png" alt=""></div>
             <h2>¿Porque elegir Budho?</h2>
             <div>
                 <div class="reviews">
@@ -183,8 +213,17 @@
             </div>
         </div>
     </div>
+    <div class="layout-region-footer"></div>
+    <div class="layout-region-page-disclosure">
+        <div class="footer-grid" style="height: 250px; background-color: var(--bearish-gray-light);">
 
-    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script> -->
+        </div>
+    </div>
+
+    <div style="margin: 20px 80px; font-size: 14px;">
+        Tenga en cuenta que invertir implica riesgos. El valor de su inversión fluctuará con el tiempo, y puede ganar o perder dinero.
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.js"
         integrity="sha512-6HrPqAvK+lZElIZ4mZ64fyxIBTsaX5zAFZg2V/2WT+iKPrFzTzvx6QAsLW2OaLwobhMYBog/+bvmIEEGXi0p1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
